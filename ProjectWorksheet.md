@@ -35,8 +35,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### MVP 
 1. Making the map
-2. Making character square
-3. Making enemy squares and classing them
+2. Making character model
+3. Making enemy models and classing them
 4. Making function to increment character position
 5. Using set interval to run over time
 6. Jump functionality

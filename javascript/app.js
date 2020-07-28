@@ -6,6 +6,7 @@ const button = document.querySelector('#restart-button');
 let jumping = false;
 let playerAlive = true;
 let landingPageRemove = document.querySelector('.landing-page');
+let counter = 0;
 
 const playerPosition = {
   x: 2,
@@ -42,20 +43,15 @@ const enemyLocation = () => {
     enemyElement.style.left = (enemyPosition.x * 100).toString() + 'px';
 };
 
-
 const renderEnemy = () => {
     enemyElement = document.createElement('div');
     enemyElement.classList.add('enemy');
     stageElement.appendChild(enemyElement);
     enemyLocation();
-
-    if (renderEnemy) {
-      let counter = 0;
-      counter++
-      console.log(counter);
-      if(counter === 3) {
-        alert('you win')
-      }
+    counter ++
+    if(counter === 10) {
+      alert('congrats you won!')
+      renderStage()
     }
 };
 
